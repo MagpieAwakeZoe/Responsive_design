@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .FlexWrapper{
+            background-color: indigo;
+            display: flex;
+            justify-content: space-between; /*中间有空白，两侧无空白*/
+            /*justify-content: space-around;*/  /*两侧有空白，中间有空白*/
+            height: 200px;
+            width: 100%;
+        }
+        .FlexInner{
+            background-color: #34005B;
+            display: flex;
+            height: 100px;
+            width: 25%;
+        }
+    </style>
+</head>
+<body style="color: white">
+<div class="FlexWrapper">
+    <div class="FlexInner">I am content in the inner Flexbox 1</div>
+    <div class="FlexInner">I am content in the inner Flexbox 2</div>
+    <div class="FlexInner">I am content in the inner Flexbox 3</div>
+</div>
+</body>
+</html>

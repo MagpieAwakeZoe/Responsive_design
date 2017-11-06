@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .FlexWrapper{
+            background-color: indigo;
+            display: flex;
+            justify-content: space-between; /*中间有空白，两侧无空白*/
+            /*justify-content: space-around;*/  /*两侧有空白，中间有空白*/
+            height: 200px;
+            width: 100%;
+        }
+        .FlexItems{
+            border: 1px solid #ebebeb;
+            background-color: #34005B;
+            display: flex;
+            height: 100px;
+        }
+        .FlexOne{
+            flex: 1.5 0 auto;
+        }
+        .FlexTwo,.FlexThree{
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+<body style="color: white">
+<div class="FlexWrapper">
+    <div class="FlexItems FlexOne">I am content in the inner Flexbox 1</div>
+    <div class="FlexItems FlexTwo">I am content in the inner Flexbox 2</div>
+    <div class="FlexItems FlexThree">I am content in the inner Flexbox 3</div>
+</div>
+</body>
+</html>

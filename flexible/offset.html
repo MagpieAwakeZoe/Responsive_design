@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .MenuWrap{
+            background-color: indigo;
+            font-size: 4rem;
+            min-height: 3.75rem;
+            display: flex;
+            align-items: center;
+            padding:0 2rem;
+            /*flex-direction: column;*/
+            /*!*垂直对齐*!*/
+        }
+
+        .ListItem,.LastItem{
+            color: #ebebeb;
+            text-decoration: none;
+        }
+
+        .ListItem{
+            margin-right: 4rem;
+        }
+        .LastItem{
+            margin-left: auto;
+            /*这里的auto给予了最大的弹性空间，直接把li挤到了最右*/
+        }
+    </style>
+</head>
+<body>
+<div class="MenuWrap">
+    <a href="#" class="ListItem">Home</a>
+    <a href="#" class="ListItem">About</a>
+    <a href="#" class="ListItem">Products</a>
+    <a href="#" class="ListItem">Policy</a>
+    <a href="#" class="LastItem">Contact</a>
+</div>
+</body>
+</html>
